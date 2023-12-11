@@ -1,7 +1,7 @@
 # function1.py
+x =1 
 
-def times(a,b):
-    return a*b
+def func(a):
+    return a+x
 
-print(times(3,4))
-
+print(func(1))
