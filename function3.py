@@ -23,7 +23,12 @@ for item in itemL:
 # else:
 #     grade = 'D'
 
-# print("등급은",grade)
+# print("등급은 {0}{1}".format(grade,sdlsk))
+
+
+# for i in [2,3,4]:
+#     for j in [1,2,3,4,5,6]:
+#         print("{0} * {1} = {2}".format(i, j, i*j))
 
 value = 5
 while value > 0:
@@ -60,3 +65,6 @@ print([i**2 for i in lst if i>5])
 tp = ('apple','kiwi','orange')
 print([len(i) for i in tp])
 
+for i in [2,3,4]:
+    for j in [1,2,3,4,5,6]:
+        print(f"{i} * {j} = {i*j}")
