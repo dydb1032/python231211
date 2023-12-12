@@ -21,3 +21,20 @@ def func2(a):
 
 print(x)
 print(func2(1))
+
+def union(*ar):  ## 가변 파라미터 별 하나는 튜플, 두개는 리스트
+
+    result = []
+    for item in ar:
+        for x in item:
+            if x not in result:
+                result.append(x)
+
+    return result
+
+print(union("HAM","SPAM"))
+print(union("HAM","SPAM","EGG"))
+
+## lambda 입력 : <처리>
+## g = lambda x,y : x*y
+
