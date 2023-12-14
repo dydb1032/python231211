@@ -16,4 +16,16 @@ soup = BeautifulSoup(page, 'html.parser')
 #print(soup.find('p'))
 
 #필터링 : <p class="outer-text">
-print(soup.find_all("p", class_='outer-text'))
+#print(soup.find_all("p", class_='outer-text'))
+
+#최근에 사용하는 코드(attributes)
+#print(soup.find_all('p', attrs = {"class":"outer-text"}))
+
+#특정 태그(id)
+#print(soup.find(id='first'))
+
+for tag in soup.find_all('p'):
+    title = tag.text.strip()
+    title = title.replace('\n','')
+    print(title)
+
